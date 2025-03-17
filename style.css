@@ -1,0 +1,41 @@
+
+.body{
+    background: black;
+}
+
+
+
+.container{
+border: ;
+}
+
+.box{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(10, 10, 10);
+}
+
+.boxx{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: auto;
+    position: relative;
+    bottom: -100px;
+    
+}
+
+.VS{
+    margin: 0 auto;
+    position: relative;
+   
+    border: dashed;
+    border-color: red;
+    width: 400px;
+    height: 500px;
+    right: -00px;
+}
+
+.VS.{
+    right: 20px;
+}
