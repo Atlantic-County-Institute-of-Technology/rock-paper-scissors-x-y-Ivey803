@@ -1,15 +1,21 @@
 
 body {
-    background-image: url('assets/machine.jpg');
+    background-image: url('assets/house.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
+color: rgb(255, 255, 255);
 }
 
 .container{
     display: flex;
     align-items: center;
     flex-direction: column;
+    
+}
+.buttons{
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
 }
 
 #button1{
@@ -60,23 +66,43 @@ body {
     margin: 0 auto;
     position: relative;
     text-align: center;
-    left: 270px;
+    left: 210px;
     top: -150px;
     box-shadow: 2px 20px 20px;
 }
+
+#button5{
+    height: 120px;
+    width: 120px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    left: 70px;
+    top: -270px;
+    box-shadow: 2px 20px 20px;
+}
+
+
 .box{
     height: 200px;
     width: 400px;
-    background-color: rgb(101, 247, 4);
+    background-color: rgba(253, 253, 252, 0.664);
+    margin: 0 auto;
+    position: relative;
+    right: 250px;
 }
 
 .boxx{
     height: 200px;
     width: 400px;
-    background-color: rgb(123, 247, 7);
+    background-color: rgba(249, 250, 248, 0.719);
     margin-bottom: auto;
     position: relative;
-    bottom: -100px;
+    top: -280px;
+    left: 500px;
+    
     
 }
 
@@ -86,8 +112,8 @@ body {
    
     border: dashed;
     border-color: red;
-    width: 400px;
+    width: 900px;
     height: 580px;
-    right: -00px;
+    top: 1000px;
 }
 
