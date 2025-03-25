@@ -5,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Trapped Rock paper scissors</title>
-    <H1>You are trapped and have to beat the computer best out of three to escape</H1>
-    <H3>Scroll down to begin...</H3>
+    
 </head>
 <body>
     <div class="container">
-        <div class="VS">
-            <div class="box"></div>
-            <div class="VS."><h1>VS.</h1></div> 
-            <div class="boxx"></div>
+ 
            <div class="buttons">
-            <button id ="rockBtn"><img src="assets/rock.png" alt="rock" style="width: 100px; height: 100px;"> </button>
-            <div class="rock">></div>
-            
-            <button id ="paperBtn"> <img src="assets/paper.png" alt="paper" style="width: 100px; height: 100px;">  </button>
-            <div class="paper"></div>
-            
-            <button id ="scissorsBtn"><img src="assets/scissors.png" alt="scissors"  style="width: 100px; height: 100px;">  </button>
-            <div class="scissors"></div>
            
-            <button id ="fridgeBtn"><img src="assets/fidg.png" alt="tridge" style="width: 100px; height: 100px;"> </button>
-            <div class="fridge"></div>
+           
+           <div class="choices">
+            <button id ="rockBtn" onclick="playGame('rock')"><img src="assets/rock.png" alt="rock" style="width: 100px; height: 100px;"> </button>
             
-            <button id ="computerBtn"> <img src="assets/comp.webp" alt="comp" style="width: 100px; height: 100px;"> </button>
-            <div class="computer"></div>
+            
+            <button id ="paperBtn" onclick="playGame('paper')"> <img src="assets/paper.png" alt="paper" style="width: 100px; height: 100px;">  </button>
+           
+            <button id ="scissorsBtn" onclick="playGame('scissors')"><img src="assets/scissors.png" alt="scissors"  style="width: 100px; height: 100px;">  </button>
+          
+           
+            <button id ="fridgeBtn" onclick="playGame('fridge')"><img src="assets/fidg.png" alt="tridge" style="width: 100px; height: 100px;"> </button>
+            
+            
+            <button id ="computerBtn" onclick="playGame('computer')"> <img src="assets/comp.webp" alt="comp" style="width: 100px; height: 100px;"> </button>
+           
+           </div>
+
+           <div id="playerDisplay">Player:</div>
+           <div id="computerDisplay">computer:</div>
+           <div id="resultDisplay">It's a Tie</div>
+            
+
+
+
+
          </div>
         </div>
     </div>
