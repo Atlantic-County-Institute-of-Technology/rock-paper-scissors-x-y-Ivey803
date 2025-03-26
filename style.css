@@ -1,3 +1,5 @@
+/* Ivey speller 3/26/25*/
+
 body{
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -10,7 +12,7 @@ body{
 .choices{
     margin-bottom: 30px;
 }
-
+/* code for the buttons*/
 .choices button{
     font-size: 7.5rem;
     min-width: 160px;
@@ -28,4 +30,8 @@ body{
 #resultDisplay{
     font-size: 5rem;
     margin: 30px 0;
+}
+
+.scoreDisplay{
+    font-size: 2rem;
 }

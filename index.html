@@ -1,3 +1,5 @@
+<!-- ivey speller 3/26/25 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,24 +16,34 @@
            
            
            <div class="choices">
-            <button id ="rockBtn" onclick="playGame('rock')"><img src="assets/rock.png" alt="rock" style="width: 100px; height: 100px;"> </button>
+            <button id ="rock" onclick="playGame('rock')"><img src="assets/rock.png" alt="rock" style="width: 100px; height: 100px;"> </button>
             
             
-            <button id ="paperBtn" onclick="playGame('paper')"> <img src="assets/paper.png" alt="paper" style="width: 100px; height: 100px;">  </button>
+            <button id ="paper" onclick="playGame('paper')"> <img src="assets/paper.png" alt="paper" style="width: 100px; height: 100px;">  </button>
            
-            <button id ="scissorsBtn" onclick="playGame('scissors')"><img src="assets/scissors.png" alt="scissors"  style="width: 100px; height: 100px;">  </button>
+            <button id ="scissors" onclick="playGame('scissors')"><img src="assets/scissors.png" alt="scissors"  style="width: 100px; height: 100px;">  </button>
           
            
-            <button id ="fridgeBtn" onclick="playGame('fridge')"><img src="assets/fidg.png" alt="tridge" style="width: 100px; height: 100px;"> </button>
+            <button id ="fridge" onclick="playGame('fridge')"><img src="assets/fidg.png" alt="tridge" style="width: 100px; height: 100px;"> </button>
             
             
-            <button id ="computerBtn" onclick="playGame('computer')"> <img src="assets/comp.webp" alt="comp" style="width: 100px; height: 100px;"> </button>
+            <button id ="computer" onclick="playGame('computer')"> <img src="assets/comp.webp" alt="comp" style="width: 100px; height: 100px;"> </button>
            
            </div>
 
            <div id="playerDisplay">Player:</div>
            <div id="computerDisplay">computer:</div>
-           <div id="resultDisplay">It's a Tie</div>
+           <div id="resultDisplay"></div>
+
+           <div class="scoreDisplay">Player score:
+            <span id="playerScoreDisplay">0</span>
+
+           </div>
+
+           <div class="scoreDisplay">computer score:
+            <span id="computerScoreDisplay">0</span>
+
+           </div>
             
 
 
