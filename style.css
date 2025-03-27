@@ -7,10 +7,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    background: rgb(7, 196, 230);
+background: linear-gradient(180deg, rgb(0, 255, 255) 20%, rgb(36, 245, 8),  rgb(0, 255, 255)  100%);
 }
 
 .choices{
     margin-bottom: 30px;
+    border: dashed;
 }
 /* code for the buttons*/
 .choices button{
@@ -22,6 +26,7 @@ body{
     cursor: pointer;
     transition: background-color 0.5s ease ;
 }
+    
 
 #playerDisplay,#computerDisplay{
     font-size: 2.5rem;
@@ -34,4 +39,14 @@ body{
 
 .scoreDisplay{
     font-size: 2rem;
+    border: dashed,color(srgb 100 240 rgb(174, 174, 219));
+}
+
+.greentext, #playerScoreDisplay{
+color: green;
+}
+
+.redtext, #computerScoreDisplay{
+    color: red;
+
 }

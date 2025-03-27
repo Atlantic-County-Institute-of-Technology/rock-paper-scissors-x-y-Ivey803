@@ -5,8 +5,8 @@ const choices = ["rock", "paper","scissors","computer","fridge"];
 const playerDisplay = document.getElementById("playerDisplay")
 const computerDisplay = document.getElementById("computerDisplay")
 const resultDisplay = document.getElementById("resultDisplay")
-const playerscoreDisplay = document.getElementById("playerscoreDisplay")
-const computerscoreDisplay = document.getElementById("computerscoreDisplay")
+const playerScoreDisplay = document.getElementById("playerScoreDisplay")
+const computerScoreDisplay = document.getElementById("computerScoreDisplay")
 let playerScore = 0;
 let computerScore = 0;
 
@@ -33,7 +33,7 @@ else{
             result =(computerChoice === "paper") ? "You Win!" : "You lose!"; break;
            //fridge crushes everything
             case "fridge":
-                result =(computerChoice === "rock" ||"paper") ? "You Win!" : "You lose!"; break;
+                result =(computerChoice === "rock" || "paper") ? "You Win!" : "You lose!"; break;
 
 
     }
@@ -42,10 +42,22 @@ else{
     playerDisplay.textContent = `player: ${playerChoice}`;
     computerDisplay.textContent = `computer: ${computerChoice}`;
     resultDisplay.textContent=result;
-
-    playerScore++;
-    playerscoreDisplay.textContent = playerScore;
-
-    computerScore++;
-    computerscoreDisplay.textContent = computerScore;
+    
+   
+   resultDisplay.classList.remove("greentext", "redtext")
+   
+    switch(result){
+   case "You Win!":
+   resultDisplay.classList.add("greentext");
+   
+   playerScore++;
+   playerScoreDisplay.textContent = playerScore;
+    break;
+  case "You lose!":
+    resultDisplay.classList.add("redtext");
+  
+  computerScore++;
+   computerScoreDisplay.textContent = computerScore;
+   break;
+   }
 }
